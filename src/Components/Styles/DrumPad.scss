@@ -1,0 +1,11 @@
+$padWidth: 50px;
+$padHeight: 40px;
+
+.drum-pad {
+  margin: 0 auto;
+  width: $padWidth;
+  height: $padHeight;
+}
+button:focus {
+  outline: 0;
+}

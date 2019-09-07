@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import './App.scss';
+import { Provider } from 'react-redux';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import PadKit from './Components/PadKit';
+import Display from './Components/Display';
+import Switch from './Components/Switch';
+import KitSwitch from './Components/KitSwitch';
+import Mixer from './Components/Mixer';
+import store from './store';
+
+class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <div id="drum-machine">
+          <PadKit />
+          <div className="controls-container">
+            <Switch text="Power" />
+            <Display />
+            <Mixer />
+            <KitSwitch text="Kit" />
+          </div>
+        </div>
+      </Provider>
+    );
+  }
 }
 
 export default App;

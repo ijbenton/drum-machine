@@ -1,0 +1,14 @@
+#display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    margin: 0;
+    position: relative;
+    width: 11rem;
+    height: 2rem;
+    background: gray;
+    color: black;
+    text-align: center;
+  }
+}

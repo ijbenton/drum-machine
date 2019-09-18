@@ -4,7 +4,6 @@ import { ADJUST_VOLUME } from '../actions/types';
 import { CLEAR_DISPLAY } from '../actions/types';
 import { UPDATE_KIT } from '../actions/types';
 import { kitOne, kitTwo } from '../Sounds/sounds';
-import { stat } from 'fs';
 
 const initialState = {
   display: '',

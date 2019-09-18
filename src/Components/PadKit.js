@@ -1,6 +1,5 @@
 import React from 'react';
 import './Styles/PadKit.scss';
-import { kitOne } from '../Sounds/sounds';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
@@ -13,6 +12,7 @@ const PadKit = props => {
         return (
           <DrumPad
             clipId={soundsArr[i].id}
+            key={soundsArr[i].id}
             clip={soundsArr[i].url}
             keyTrigger={soundsArr[i].keyTrigger}
             keyCode={soundsArr[i].keyCode}
@@ -23,6 +23,7 @@ const PadKit = props => {
         return (
           <DrumPad
             clipId={soundsArr[i].id}
+            key={soundsArr[i].id}
             clip="#"
             keyTrigger={soundsArr[i].keyTrigger}
             keyCode={soundsArr[i].keyCode}

@@ -1,5 +1,5 @@
 $padWidth: 5rem;
-$padHeight: 4rem;
+$padHeight: 5rem;
 $fontSize: 18px;
 
 @media screen and (max-width: 767px) and (min-width: 480px) {
@@ -8,15 +8,22 @@ $fontSize: 18px;
     font-size: $fontSize;
   }
 }
-@media screen and (max-width: 510px) and (min-width: 387px) {
-  $fontSize: 9px;
+@media screen and (max-width: 479px) {
+  $fontSize: 11px;
+  $padWidth: 6rem;
+  $padHeight: 6rem;
   * {
     font-size: $fontSize;
   }
-}
-@media screen and (max-width: 386px) {
-  $fontSize: 7px;
-  * {
-    font-size: $fontSize;
+  #drum-machine {
+    height: 35rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pad-kit {
+    margin-bottom: 0.5rem;
+  }
+  .drum-pad {
+    width: $padWidth !important;
+    height: $padHeight !important;
   }
 }

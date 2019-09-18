@@ -35,12 +35,13 @@ class DrumPad extends Component {
     }
   }
   playAudio() {
-    const node = this.audio.current;
-    node.currentTime = 0;
-    node.play();
-    this.activatePad();
-    setTimeout(() => this.activatePad(), 100);
-    this.props.updateDisplay(this.props.clipId.replace(/-/g, ' '));
+    if (this.props.power) {
+      this.audio.play();
+      this.audio.currentTime = 0;
+      this.activatePad();
+      setTimeout(() => this.activatePad(), 100);
+      this.props.updateDisplay(this.props.clipId.replace(/-/g, ' '));
+    }
   }
 
   handleKeyPress(e) {
@@ -60,7 +61,7 @@ class DrumPad extends Component {
           id={this.props.keyTrigger}
           src={this.props.clip}
           className="clip"
-          ref={this.audio}
+          ref={ref => (this.audio = ref)}
         />
         {this.props.keyTrigger}
       </button>

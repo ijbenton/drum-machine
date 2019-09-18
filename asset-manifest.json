@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/drum-machine/static/css/main.792ba2a7.chunk.css",
-    "main.js": "/drum-machine/static/js/main.51eb1331.chunk.js",
-    "main.js.map": "/drum-machine/static/js/main.51eb1331.chunk.js.map",
-    "runtime~main.js": "/drum-machine/static/js/runtime~main.d76d37b4.js",
-    "runtime~main.js.map": "/drum-machine/static/js/runtime~main.d76d37b4.js.map",
-    "static/js/2.65d12177.chunk.js": "/drum-machine/static/js/2.65d12177.chunk.js",
-    "static/js/2.65d12177.chunk.js.map": "/drum-machine/static/js/2.65d12177.chunk.js.map",
-    "index.html": "/drum-machine/index.html",
-    "precache-manifest.8a742af83ee098123cd544929b70709a.js": "/drum-machine/precache-manifest.8a742af83ee098123cd544929b70709a.js",
-    "service-worker.js": "/drum-machine/service-worker.js",
-    "static/css/main.792ba2a7.chunk.css.map": "/drum-machine/static/css/main.792ba2a7.chunk.css.map"
+    "main.css": "/DrumMachine/static/css/main.792ba2a7.chunk.css",
+    "main.js": "/DrumMachine/static/js/main.51eb1331.chunk.js",
+    "main.js.map": "/DrumMachine/static/js/main.51eb1331.chunk.js.map",
+    "runtime~main.js": "/DrumMachine/static/js/runtime~main.e5a8e10d.js",
+    "runtime~main.js.map": "/DrumMachine/static/js/runtime~main.e5a8e10d.js.map",
+    "static/js/2.65d12177.chunk.js": "/DrumMachine/static/js/2.65d12177.chunk.js",
+    "static/js/2.65d12177.chunk.js.map": "/DrumMachine/static/js/2.65d12177.chunk.js.map",
+    "index.html": "/DrumMachine/index.html",
+    "precache-manifest.6368d8d74be65ef3dcac90254257020f.js": "/DrumMachine/precache-manifest.6368d8d74be65ef3dcac90254257020f.js",
+    "service-worker.js": "/DrumMachine/service-worker.js",
+    "static/css/main.792ba2a7.chunk.css.map": "/DrumMachine/static/css/main.792ba2a7.chunk.css.map"
   }
 }

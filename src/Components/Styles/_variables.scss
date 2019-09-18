@@ -1,0 +1,22 @@
+$padWidth: 5rem;
+$padHeight: 4rem;
+$fontSize: 18px;
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  $fontSize: 12px;
+  * {
+    font-size: $fontSize;
+  }
+}
+@media screen and (max-width: 510px) and (min-width: 387px) {
+  $fontSize: 9px;
+  * {
+    font-size: $fontSize;
+  }
+}
+@media screen and (max-width: 386px) {
+  $fontSize: 7px;
+  * {
+    font-size: $fontSize;
+  }
+}

@@ -1,9 +1,14 @@
+@import 'Components/Styles/variables';
+* {
+  touch-action: manipulation;
+  font-size: $fontSize;
+}
 #root {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-size: 20px;
+  font-size: 24px;
   background-color: gray;
   font-family: 'Roboto', sans-serif;
 }

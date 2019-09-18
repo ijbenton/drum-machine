@@ -113,13 +113,10 @@ export const kitTwo = [
 ];
 
 export const activeStyle = {
-  backgroundColor: 'red',
-  height: 38,
-  marginTop: 13
+  backgroundColor: 'red'
 };
 
 export const inactiveStyle = {
   backgroundColor: 'grey',
-  marginTop: 10,
   boxShadow: '3px 3px 5px black'
 };

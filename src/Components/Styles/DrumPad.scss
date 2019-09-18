@@ -1,10 +1,12 @@
-$padWidth: 50px;
-$padHeight: 40px;
+@import 'variables';
 
 .drum-pad {
-  margin: 0 auto;
+  margin: auto;
   width: $padWidth;
   height: $padHeight;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 button:focus {
   outline: 0;

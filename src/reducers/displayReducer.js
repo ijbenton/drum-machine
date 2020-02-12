@@ -3,7 +3,7 @@ import { POWER_SWITCH } from '../actions/types';
 import { ADJUST_VOLUME } from '../actions/types';
 import { CLEAR_DISPLAY } from '../actions/types';
 import { UPDATE_KIT } from '../actions/types';
-import { kitOne, kitTwo } from '../Sounds/sounds';
+import { kitOne, kitTwo } from '../assets/sounds';
 
 const initialState = {
   display: '',

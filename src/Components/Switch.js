@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { powerSwitch } from '../actions/displayActions';
-import './Styles/Switch.scss';
-import PropTypes from 'prop-types';
+
+import '../styles/_switch.scss';
 
 const Switch = props => {
   let powerSlider = '';
@@ -34,7 +35,4 @@ const mapStateToProps = state => ({
   power: state.display.power
 });
 
-export default connect(
-  mapStateToProps,
-  { powerSwitch }
-)(Switch);
+export default connect(mapStateToProps, { powerSwitch })(Switch);

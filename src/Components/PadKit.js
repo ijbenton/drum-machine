@@ -1,9 +1,10 @@
 import React from 'react';
-import './Styles/PadKit.scss';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import DrumPad from './DrumPad';
+
+import '../styles/_pad_kit.scss';
 
 const PadKit = props => {
   let padKit;

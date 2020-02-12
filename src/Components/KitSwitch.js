@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { updateKit } from '../actions/displayActions';
-import './Styles/Switch.scss';
-import PropTypes from 'prop-types';
+
+import '../styles/_switch.scss';
 
 const KitSwitch = props => {
   let kitSlider = '';
@@ -33,7 +34,4 @@ const mapStateToProps = state => ({
   currentPadBankId: state.display.currentPadBankId
 });
 
-export default connect(
-  mapStateToProps,
-  { updateKit }
-)(KitSwitch);
+export default connect(mapStateToProps, { updateKit })(KitSwitch);

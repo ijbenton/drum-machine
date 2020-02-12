@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import './App.scss';
 import { Provider } from 'react-redux';
 
-import PadKit from './Components/PadKit';
-import Display from './Components/Display';
-import Switch from './Components/Switch';
-import KitSwitch from './Components/KitSwitch';
-import Mixer from './Components/Mixer';
+import PadKit from './components/PadKit';
+import Display from './components/Display';
+import Switch from './components/Switch';
+import KitSwitch from './components/KitSwitch';
+import Mixer from './components/Mixer';
 import store from './store';
+
+import './App.scss';
 
 class App extends Component {
   render() {

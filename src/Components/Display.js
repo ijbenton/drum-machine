@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import './Styles/Display.scss';
+import '../styles/_display.scss';
 
 const Display = props => {
   return (

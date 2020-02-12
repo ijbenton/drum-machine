@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './Styles/DrumPad.scss';
 import { connect } from 'react-redux';
 import { updateDisplay } from '../actions/displayActions';
 
-import { activeStyle, inactiveStyle } from '../Sounds/sounds';
+import { activeStyle, inactiveStyle } from '../assets/sounds';
+import '../styles/_drum_pad.scss';
 
 class DrumPad extends Component {
   constructor(props) {
@@ -80,7 +80,4 @@ const mapStateToProps = state => ({
   power: state.display.power
 });
 
-export default connect(
-  mapStateToProps,
-  { updateDisplay }
-)(DrumPad);
+export default connect(mapStateToProps, { updateDisplay })(DrumPad);

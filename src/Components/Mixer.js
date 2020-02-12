@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import './Styles/Mixer.scss';
 import { adjustVolume } from '../actions/displayActions';
+
+import '../styles/_mixer.scss';
 
 const Mixer = props => {
   const clips = [].slice.call(document.getElementsByClassName('clip'));
@@ -33,7 +34,4 @@ const mapStateToProps = state => ({
   volume: state.display.volume
 });
 
-export default connect(
-  mapStateToProps,
-  { adjustVolume }
-)(Mixer);
+export default connect(mapStateToProps, { adjustVolume })(Mixer);

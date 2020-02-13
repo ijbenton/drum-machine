@@ -36,8 +36,8 @@ class DrumPad extends Component {
   }
   playAudio() {
     if (this.props.power) {
-      this.audio.play();
       this.audio.currentTime = 0;
+      this.audio.play();
       this.activatePad();
       setTimeout(() => this.activatePad(), 100);
       this.props.updateDisplay(this.props.clipId.replace(/-/g, ' '));
